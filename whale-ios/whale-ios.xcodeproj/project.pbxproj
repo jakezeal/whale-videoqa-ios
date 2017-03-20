@@ -8,20 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		E2C313C21E8047E50098937A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C313C11E8047E50098937A /* AppDelegate.swift */; };
-		E2C313C41E8047E50098937A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C313C31E8047E50098937A /* ViewController.swift */; };
 		E2C313C71E8047E50098937A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2C313C51E8047E50098937A /* Main.storyboard */; };
 		E2C313C91E8047E50098937A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2C313C81E8047E50098937A /* Assets.xcassets */; };
 		E2C313CC1E8047E50098937A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2C313CA1E8047E50098937A /* LaunchScreen.storyboard */; };
+		E2C313DB1E804ACC0098937A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C313DA1E804ACC0098937A /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E2C313BE1E8047E50098937A /* whale-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "whale-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2C313C11E8047E50098937A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E2C313C31E8047E50098937A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E2C313C61E8047E50098937A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E2C313C81E8047E50098937A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E2C313CB1E8047E50098937A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E2C313CD1E8047E50098937A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2C313DA1E804ACC0098937A /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = UI/Scenes/ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +55,69 @@
 			isa = PBXGroup;
 			children = (
 				E2C313C11E8047E50098937A /* AppDelegate.swift */,
-				E2C313C31E8047E50098937A /* ViewController.swift */,
-				E2C313C51E8047E50098937A /* Main.storyboard */,
+				E2C313D91E804A480098937A /* Networking */,
+				E2C313D51E8049F00098937A /* UI */,
+				E2C313D31E8049DD0098937A /* Extensions */,
+				E2C313D41E8049E30098937A /* Supporting Files */,
+			);
+			path = "whale-ios";
+			sourceTree = "<group>";
+		};
+		E2C313D31E8049DD0098937A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		E2C313D41E8049E30098937A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
 				E2C313C81E8047E50098937A /* Assets.xcassets */,
 				E2C313CA1E8047E50098937A /* LaunchScreen.storyboard */,
 				E2C313CD1E8047E50098937A /* Info.plist */,
 			);
-			path = "whale-ios";
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E2C313D51E8049F00098937A /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				E2C313D81E804A320098937A /* Scenes */,
+				E2C313D71E804A2B0098937A /* Cells */,
+				E2C313D61E8049F50098937A /* Storyboards */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		E2C313D61E8049F50098937A /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				E2C313C51E8047E50098937A /* Main.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		E2C313D71E804A2B0098937A /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		E2C313D81E804A320098937A /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				E2C313DA1E804ACC0098937A /* ViewController.swift */,
+			);
+			name = Scenes;
+			sourceTree = "<group>";
+		};
+		E2C313D91E804A480098937A /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +193,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E2C313C41E8047E50098937A /* ViewController.swift in Sources */,
+				E2C313DB1E804ACC0098937A /* ViewController.swift in Sources */,
 				E2C313C21E8047E50098937A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
