@@ -53,7 +53,7 @@ class WSignUpFlowPasswordInputCell: UITableViewCell {
         
         let buttonTitle = hidePasswordVisibility ? "SHOW" : "HIDE"
         let attributes = [NSForegroundColorAttributeName : UIColor.w_blue,
-                          NSFontAttributeName : UIFont(name: "OpenSans-Bold", size: 13)!,
+                          NSFontAttributeName : UIFont.systemFont(ofSize: 13),
                           NSKernAttributeName : NSNumber(value: 1)]
         
         let attrStr = NSAttributedString(string: buttonTitle, attributes: attributes)

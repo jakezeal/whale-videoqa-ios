@@ -25,6 +25,7 @@
 		E2C313FF1E82F4D00098937A /* WSignUpFlowSubtitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C313FD1E82F4D00098937A /* WSignUpFlowSubtitleCell.swift */; };
 		E2C314001E82F4D00098937A /* WSignUpFlowSubtitleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2C313FE1E82F4D00098937A /* WSignUpFlowSubtitleCell.xib */; };
 		E2C314021E82F5510098937A /* UIColor+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C314011E82F5510098937A /* UIColor+Utilities.swift */; };
+		E2C314041E82F6D50098937A /* Enum+CaseCountable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C314031E82F6D50098937A /* Enum+CaseCountable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		E2C313FD1E82F4D00098937A /* WSignUpFlowSubtitleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WSignUpFlowSubtitleCell.swift; sourceTree = "<group>"; };
 		E2C313FE1E82F4D00098937A /* WSignUpFlowSubtitleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WSignUpFlowSubtitleCell.xib; sourceTree = "<group>"; };
 		E2C314011E82F5510098937A /* UIColor+Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Utilities.swift"; sourceTree = "<group>"; };
+		E2C314031E82F6D50098937A /* Enum+CaseCountable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Enum+CaseCountable.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 		E2C313D31E8049DD0098937A /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				E2C314031E82F6D50098937A /* Enum+CaseCountable.swift */,
 				E2C314011E82F5510098937A /* UIColor+Utilities.swift */,
 				E2C313F31E82F3A50098937A /* UIResponder+Utilities.swift */,
 			);
@@ -381,6 +384,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2C314041E82F6D50098937A /* Enum+CaseCountable.swift in Sources */,
 				E2C313FF1E82F4D00098937A /* WSignUpFlowSubtitleCell.swift in Sources */,
 				E2C313ED1E82F2980098937A /* WSignUpFlowPasswordInputCell.swift in Sources */,
 				E2C313E81E82EF160098937A /* SignUpViewController.swift in Sources */,
