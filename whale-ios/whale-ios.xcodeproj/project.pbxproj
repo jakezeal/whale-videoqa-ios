@@ -7,21 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		36BA33A85C1D559C22BEEF21 /* Pods_whale_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD0D88E64DE4DA908A3BF735 /* Pods_whale_ios.framework */; };
 		E2C313C21E8047E50098937A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C313C11E8047E50098937A /* AppDelegate.swift */; };
-		E2C313C71E8047E50098937A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2C313C51E8047E50098937A /* Main.storyboard */; };
 		E2C313C91E8047E50098937A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2C313C81E8047E50098937A /* Assets.xcassets */; };
 		E2C313CC1E8047E50098937A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2C313CA1E8047E50098937A /* LaunchScreen.storyboard */; };
 		E2C313DB1E804ACC0098937A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C313DA1E804ACC0098937A /* ViewController.swift */; };
+		E2C313DE1E80556C0098937A /* Authentication.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2C313DD1E80556C0098937A /* Authentication.storyboard */; };
+		E2C313E01E8055A20098937A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2C313DF1E8055A20098937A /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		17C33564846706D856D7FEE6 /* Pods-whale-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-whale-ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-whale-ios/Pods-whale-ios.debug.xcconfig"; sourceTree = "<group>"; };
+		CC6C6F3A42A0E62D5AB26681 /* Pods-whale-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-whale-ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-whale-ios/Pods-whale-ios.release.xcconfig"; sourceTree = "<group>"; };
+		CD0D88E64DE4DA908A3BF735 /* Pods_whale_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_whale_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2C313BE1E8047E50098937A /* whale-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "whale-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2C313C11E8047E50098937A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E2C313C61E8047E50098937A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E2C313C81E8047E50098937A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E2C313CB1E8047E50098937A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E2C313CD1E8047E50098937A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E2C313DA1E804ACC0098937A /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = UI/Scenes/ViewController.swift; sourceTree = "<group>"; };
+		E2C313DD1E80556C0098937A /* Authentication.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Authentication.storyboard; path = UI/Storyboards/Authentication.storyboard; sourceTree = "<group>"; };
+		E2C313DF1E8055A20098937A /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = UI/Storyboards/Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36BA33A85C1D559C22BEEF21 /* Pods_whale_ios.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F845C0C391180CDA4DC9325 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CD0D88E64DE4DA908A3BF735 /* Pods_whale_ios.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DEA20F117C3100C3C5F5D464 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				17C33564846706D856D7FEE6 /* Pods-whale-ios.debug.xcconfig */,
+				CC6C6F3A42A0E62D5AB26681 /* Pods-whale-ios.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		E2C313B51E8047E50098937A = {
 			isa = PBXGroup;
 			children = (
 				E2C313C01E8047E50098937A /* whale-ios */,
 				E2C313BF1E8047E50098937A /* Products */,
+				DEA20F117C3100C3C5F5D464 /* Pods */,
+				3F845C0C391180CDA4DC9325 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -93,7 +119,8 @@
 		E2C313D61E8049F50098937A /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
-				E2C313C51E8047E50098937A /* Main.storyboard */,
+				E2C313DF1E8055A20098937A /* Main.storyboard */,
+				E2C313DD1E80556C0098937A /* Authentication.storyboard */,
 			);
 			name = Storyboards;
 			sourceTree = "<group>";
@@ -108,7 +135,7 @@
 		E2C313D81E804A320098937A /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				E2C313DA1E804ACC0098937A /* ViewController.swift */,
+				E2C313DC1E8055080098937A /* Authentication */,
 			);
 			name = Scenes;
 			sourceTree = "<group>";
@@ -120,6 +147,30 @@
 			name = Networking;
 			sourceTree = "<group>";
 		};
+		E2C313DC1E8055080098937A /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				E2C313E21E80569D0098937A /* Sign up */,
+				E2C313E11E8056930098937A /* Login */,
+				E2C313DA1E804ACC0098937A /* ViewController.swift */,
+			);
+			name = Authentication;
+			sourceTree = "<group>";
+		};
+		E2C313E11E8056930098937A /* Login */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		E2C313E21E80569D0098937A /* Sign up */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Sign up";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -127,9 +178,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E2C313D01E8047E50098937A /* Build configuration list for PBXNativeTarget "whale-ios" */;
 			buildPhases = (
+				7864D76F8B98E8D33100C7E6 /* [CP] Check Pods Manifest.lock */,
 				E2C313BA1E8047E50098937A /* Sources */,
 				E2C313BB1E8047E50098937A /* Frameworks */,
 				E2C313BC1E8047E50098937A /* Resources */,
+				78B1DF4D7073D4C4CF46E1DC /* [CP] Embed Pods Frameworks */,
+				4B4F30BE643455D2FCFBC489 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -180,13 +234,62 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2C313DE1E80556C0098937A /* Authentication.storyboard in Resources */,
 				E2C313CC1E8047E50098937A /* LaunchScreen.storyboard in Resources */,
 				E2C313C91E8047E50098937A /* Assets.xcassets in Resources */,
-				E2C313C71E8047E50098937A /* Main.storyboard in Resources */,
+				E2C313E01E8055A20098937A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4B4F30BE643455D2FCFBC489 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-whale-ios/Pods-whale-ios-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7864D76F8B98E8D33100C7E6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		78B1DF4D7073D4C4CF46E1DC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-whale-ios/Pods-whale-ios-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E2C313BA1E8047E50098937A /* Sources */ = {
@@ -201,14 +304,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		E2C313C51E8047E50098937A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E2C313C61E8047E50098937A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		E2C313CA1E8047E50098937A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -313,10 +408,12 @@
 		};
 		E2C313D11E8047E50098937A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17C33564846706D856D7FEE6 /* Pods-whale-ios.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = MPF357W934;
 				INFOPLIST_FILE = "whale-ios/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jakezeal.whale-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -326,10 +423,12 @@
 		};
 		E2C313D21E8047E50098937A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC6C6F3A42A0E62D5AB26681 /* Pods-whale-ios.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = MPF357W934;
 				INFOPLIST_FILE = "whale-ios/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jakezeal.whale-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -356,6 +455,7 @@
 				E2C313D21E8047E50098937A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
