@@ -15,6 +15,15 @@
 		E2C313E01E8055A20098937A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2C313DF1E8055A20098937A /* Main.storyboard */; };
 		E2C313E61E82EF090098937A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C313E51E82EF090098937A /* LoginViewController.swift */; };
 		E2C313E81E82EF160098937A /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C313E71E82EF160098937A /* SignUpViewController.swift */; };
+		E2C313ED1E82F2980098937A /* WSignUpFlowPasswordInputCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C313EB1E82F2980098937A /* WSignUpFlowPasswordInputCell.swift */; };
+		E2C313EE1E82F2980098937A /* WSignUpFlowPasswordInputCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2C313EC1E82F2980098937A /* WSignUpFlowPasswordInputCell.xib */; };
+		E2C313F11E82F29E0098937A /* WSignUpFlowInputFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C313EF1E82F29E0098937A /* WSignUpFlowInputFieldCell.swift */; };
+		E2C313F21E82F29E0098937A /* WSignUpFlowInputFieldCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2C313F01E82F29E0098937A /* WSignUpFlowInputFieldCell.xib */; };
+		E2C313F41E82F3A50098937A /* UIResponder+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C313F31E82F3A50098937A /* UIResponder+Utilities.swift */; };
+		E2C313FA1E82F4350098937A /* WSignUpFlowTitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C313F81E82F4350098937A /* WSignUpFlowTitleCell.swift */; };
+		E2C313FB1E82F4350098937A /* WSignUpFlowTitleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2C313F91E82F4350098937A /* WSignUpFlowTitleCell.xib */; };
+		E2C313FF1E82F4D00098937A /* WSignUpFlowSubtitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C313FD1E82F4D00098937A /* WSignUpFlowSubtitleCell.swift */; };
+		E2C314001E82F4D00098937A /* WSignUpFlowSubtitleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2C313FE1E82F4D00098937A /* WSignUpFlowSubtitleCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +39,15 @@
 		E2C313DF1E8055A20098937A /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = UI/Storyboards/Main.storyboard; sourceTree = "<group>"; };
 		E2C313E51E82EF090098937A /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = UI/Scenes/Authentication/LoginViewController.swift; sourceTree = "<group>"; };
 		E2C313E71E82EF160098937A /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignUpViewController.swift; path = UI/Scenes/Authentication/SignUpViewController.swift; sourceTree = "<group>"; };
+		E2C313EB1E82F2980098937A /* WSignUpFlowPasswordInputCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WSignUpFlowPasswordInputCell.swift; sourceTree = "<group>"; };
+		E2C313EC1E82F2980098937A /* WSignUpFlowPasswordInputCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WSignUpFlowPasswordInputCell.xib; sourceTree = "<group>"; };
+		E2C313EF1E82F29E0098937A /* WSignUpFlowInputFieldCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WSignUpFlowInputFieldCell.swift; sourceTree = "<group>"; };
+		E2C313F01E82F29E0098937A /* WSignUpFlowInputFieldCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WSignUpFlowInputFieldCell.xib; sourceTree = "<group>"; };
+		E2C313F31E82F3A50098937A /* UIResponder+Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIResponder+Utilities.swift"; sourceTree = "<group>"; };
+		E2C313F81E82F4350098937A /* WSignUpFlowTitleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WSignUpFlowTitleCell.swift; sourceTree = "<group>"; };
+		E2C313F91E82F4350098937A /* WSignUpFlowTitleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WSignUpFlowTitleCell.xib; sourceTree = "<group>"; };
+		E2C313FD1E82F4D00098937A /* WSignUpFlowSubtitleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WSignUpFlowSubtitleCell.swift; sourceTree = "<group>"; };
+		E2C313FE1E82F4D00098937A /* WSignUpFlowSubtitleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WSignUpFlowSubtitleCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +112,7 @@
 		E2C313D31E8049DD0098937A /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				E2C313F31E82F3A50098937A /* UIResponder+Utilities.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -130,6 +149,7 @@
 		E2C313D71E804A2B0098937A /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				E2C313E91E82F2740098937A /* Authentication */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -172,6 +192,61 @@
 				E2C313E71E82EF160098937A /* SignUpViewController.swift */,
 			);
 			name = "Sign up";
+			sourceTree = "<group>";
+		};
+		E2C313E91E82F2740098937A /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				E2C313EA1E82F27C0098937A /* Sign up */,
+			);
+			name = Authentication;
+			sourceTree = "<group>";
+		};
+		E2C313EA1E82F27C0098937A /* Sign up */ = {
+			isa = PBXGroup;
+			children = (
+				E2C313F51E82F3EF0098937A /* SignUpFlowPasswordInputCell */,
+				E2C313F61E82F3F70098937A /* SignUpFlowInputFieldCell */,
+				E2C313F71E82F4150098937A /* SignUpFlowTitleCell */,
+				E2C313FC1E82F4BF0098937A /* SignUpFlowSubtitleCell */,
+			);
+			name = "Sign up";
+			sourceTree = "<group>";
+		};
+		E2C313F51E82F3EF0098937A /* SignUpFlowPasswordInputCell */ = {
+			isa = PBXGroup;
+			children = (
+				E2C313EB1E82F2980098937A /* WSignUpFlowPasswordInputCell.swift */,
+				E2C313EC1E82F2980098937A /* WSignUpFlowPasswordInputCell.xib */,
+			);
+			name = SignUpFlowPasswordInputCell;
+			sourceTree = "<group>";
+		};
+		E2C313F61E82F3F70098937A /* SignUpFlowInputFieldCell */ = {
+			isa = PBXGroup;
+			children = (
+				E2C313EF1E82F29E0098937A /* WSignUpFlowInputFieldCell.swift */,
+				E2C313F01E82F29E0098937A /* WSignUpFlowInputFieldCell.xib */,
+			);
+			name = SignUpFlowInputFieldCell;
+			sourceTree = "<group>";
+		};
+		E2C313F71E82F4150098937A /* SignUpFlowTitleCell */ = {
+			isa = PBXGroup;
+			children = (
+				E2C313F81E82F4350098937A /* WSignUpFlowTitleCell.swift */,
+				E2C313F91E82F4350098937A /* WSignUpFlowTitleCell.xib */,
+			);
+			name = SignUpFlowTitleCell;
+			sourceTree = "<group>";
+		};
+		E2C313FC1E82F4BF0098937A /* SignUpFlowSubtitleCell */ = {
+			isa = PBXGroup;
+			children = (
+				E2C313FD1E82F4D00098937A /* WSignUpFlowSubtitleCell.swift */,
+				E2C313FE1E82F4D00098937A /* WSignUpFlowSubtitleCell.xib */,
+			);
+			name = SignUpFlowSubtitleCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,8 +312,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2C313FB1E82F4350098937A /* WSignUpFlowTitleCell.xib in Resources */,
+				E2C313F21E82F29E0098937A /* WSignUpFlowInputFieldCell.xib in Resources */,
 				E2C313DE1E80556C0098937A /* Authentication.storyboard in Resources */,
 				E2C313CC1E8047E50098937A /* LaunchScreen.storyboard in Resources */,
+				E2C314001E82F4D00098937A /* WSignUpFlowSubtitleCell.xib in Resources */,
+				E2C313EE1E82F2980098937A /* WSignUpFlowPasswordInputCell.xib in Resources */,
 				E2C313C91E8047E50098937A /* Assets.xcassets in Resources */,
 				E2C313E01E8055A20098937A /* Main.storyboard in Resources */,
 			);
@@ -299,9 +378,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2C313FF1E82F4D00098937A /* WSignUpFlowSubtitleCell.swift in Sources */,
+				E2C313ED1E82F2980098937A /* WSignUpFlowPasswordInputCell.swift in Sources */,
 				E2C313E81E82EF160098937A /* SignUpViewController.swift in Sources */,
 				E2C313E61E82EF090098937A /* LoginViewController.swift in Sources */,
+				E2C313F11E82F29E0098937A /* WSignUpFlowInputFieldCell.swift in Sources */,
 				E2C313C21E8047E50098937A /* AppDelegate.swift in Sources */,
+				E2C313FA1E82F4350098937A /* WSignUpFlowTitleCell.swift in Sources */,
+				E2C313F41E82F3A50098937A /* UIResponder+Utilities.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -65,10 +65,10 @@
             </objects>
             <point key="canvasLocation" x="-1514.4000000000001" y="-59.820089955022496"/>
         </scene>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="uCs-Kn-cfw">
             <objects>
-                <viewController id="SeL-JP-SYw" sceneMemberID="viewController">
+                <viewController id="SeL-JP-SYw" customClass="LoginViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="rjR-ue-gen"/>
                         <viewControllerLayoutGuide type="bottom" id="smJ-7f-N68"/>
@@ -90,10 +90,10 @@
             </objects>
             <point key="canvasLocation" x="-754" y="235"/>
         </scene>
-        <!--View Controller-->
+        <!--Sign Up View Controller-->
         <scene sceneID="c78-eP-Smw">
             <objects>
-                <viewController id="Aa7-eC-1fU" sceneMemberID="viewController">
+                <viewController id="Aa7-eC-1fU" customClass="SignUpViewController" customModule="whale_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="EX1-Hl-FtX"/>
                         <viewControllerLayoutGuide type="bottom" id="xFf-v4-OsU"/>
