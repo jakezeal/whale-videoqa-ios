@@ -11,9 +11,10 @@
 		E2C313C21E8047E50098937A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C313C11E8047E50098937A /* AppDelegate.swift */; };
 		E2C313C91E8047E50098937A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2C313C81E8047E50098937A /* Assets.xcassets */; };
 		E2C313CC1E8047E50098937A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2C313CA1E8047E50098937A /* LaunchScreen.storyboard */; };
-		E2C313DB1E804ACC0098937A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C313DA1E804ACC0098937A /* ViewController.swift */; };
 		E2C313DE1E80556C0098937A /* Authentication.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2C313DD1E80556C0098937A /* Authentication.storyboard */; };
 		E2C313E01E8055A20098937A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2C313DF1E8055A20098937A /* Main.storyboard */; };
+		E2C313E61E82EF090098937A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C313E51E82EF090098937A /* LoginViewController.swift */; };
+		E2C313E81E82EF160098937A /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C313E71E82EF160098937A /* SignUpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,9 +26,10 @@
 		E2C313C81E8047E50098937A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E2C313CB1E8047E50098937A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E2C313CD1E8047E50098937A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E2C313DA1E804ACC0098937A /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = UI/Scenes/ViewController.swift; sourceTree = "<group>"; };
 		E2C313DD1E80556C0098937A /* Authentication.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Authentication.storyboard; path = UI/Storyboards/Authentication.storyboard; sourceTree = "<group>"; };
 		E2C313DF1E8055A20098937A /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = UI/Storyboards/Main.storyboard; sourceTree = "<group>"; };
+		E2C313E51E82EF090098937A /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = UI/Scenes/Authentication/LoginViewController.swift; sourceTree = "<group>"; };
+		E2C313E71E82EF160098937A /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignUpViewController.swift; path = UI/Scenes/Authentication/SignUpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,7 +154,6 @@
 			children = (
 				E2C313E21E80569D0098937A /* Sign up */,
 				E2C313E11E8056930098937A /* Login */,
-				E2C313DA1E804ACC0098937A /* ViewController.swift */,
 			);
 			name = Authentication;
 			sourceTree = "<group>";
@@ -160,6 +161,7 @@
 		E2C313E11E8056930098937A /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				E2C313E51E82EF090098937A /* LoginViewController.swift */,
 			);
 			name = Login;
 			sourceTree = "<group>";
@@ -167,6 +169,7 @@
 		E2C313E21E80569D0098937A /* Sign up */ = {
 			isa = PBXGroup;
 			children = (
+				E2C313E71E82EF160098937A /* SignUpViewController.swift */,
 			);
 			name = "Sign up";
 			sourceTree = "<group>";
@@ -296,7 +299,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E2C313DB1E804ACC0098937A /* ViewController.swift in Sources */,
+				E2C313E81E82EF160098937A /* SignUpViewController.swift in Sources */,
+				E2C313E61E82EF090098937A /* LoginViewController.swift in Sources */,
 				E2C313C21E8047E50098937A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
