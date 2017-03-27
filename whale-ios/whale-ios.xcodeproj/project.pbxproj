@@ -28,8 +28,8 @@
 		E2C3141B1E82F7FF0098937A /* WSignUpFlowSubtitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C314191E82F7FF0098937A /* WSignUpFlowSubtitleCell.swift */; };
 		E2C3141C1E82F7FF0098937A /* WSignUpFlowSubtitleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2C3141A1E82F7FF0098937A /* WSignUpFlowSubtitleCell.xib */; };
 		E2C314251E82F8CD0098937A /* WAuthenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C3141D1E82F8CD0098937A /* WAuthenticationViewController.swift */; };
-		E2C314271E82F8CD0098937A /* HUSignUpFlowEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C3141F1E82F8CD0098937A /* HUSignUpFlowEmailViewController.swift */; };
-		E2C314281E82F8CD0098937A /* HUSignUpFlowEmailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C314201E82F8CD0098937A /* HUSignUpFlowEmailViewModel.swift */; };
+		E2C314271E82F8CD0098937A /* WSignUpFlowEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C3141F1E82F8CD0098937A /* WSignUpFlowEmailViewController.swift */; };
+		E2C314281E82F8CD0098937A /* WSignUpFlowEmailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C314201E82F8CD0098937A /* WSignUpFlowEmailViewModel.swift */; };
 		E2C314291E82F8CD0098937A /* WSignUpFlowPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C314211E82F8CD0098937A /* WSignUpFlowPasswordViewController.swift */; };
 		E2C3142A1E82F8CD0098937A /* WSignUpFlowPasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C314221E82F8CD0098937A /* WSignUpFlowPasswordViewModel.swift */; };
 		E2C3142B1E82F8CD0098937A /* WCreateUsernameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C314231E82F8CD0098937A /* WCreateUsernameViewController.swift */; };
@@ -64,8 +64,8 @@
 		E2C314191E82F7FF0098937A /* WSignUpFlowSubtitleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WSignUpFlowSubtitleCell.swift; path = "UI/Cells/Authentication/Sign Up/WSignUpFlowSubtitleCell.swift"; sourceTree = "<group>"; };
 		E2C3141A1E82F7FF0098937A /* WSignUpFlowSubtitleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = WSignUpFlowSubtitleCell.xib; path = "UI/Cells/Authentication/Sign Up/WSignUpFlowSubtitleCell.xib"; sourceTree = "<group>"; };
 		E2C3141D1E82F8CD0098937A /* WAuthenticationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WAuthenticationViewController.swift; sourceTree = "<group>"; };
-		E2C3141F1E82F8CD0098937A /* HUSignUpFlowEmailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HUSignUpFlowEmailViewController.swift; sourceTree = "<group>"; };
-		E2C314201E82F8CD0098937A /* HUSignUpFlowEmailViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HUSignUpFlowEmailViewModel.swift; sourceTree = "<group>"; };
+		E2C3141F1E82F8CD0098937A /* WSignUpFlowEmailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WSignUpFlowEmailViewController.swift; sourceTree = "<group>"; };
+		E2C314201E82F8CD0098937A /* WSignUpFlowEmailViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WSignUpFlowEmailViewModel.swift; sourceTree = "<group>"; };
 		E2C314211E82F8CD0098937A /* WSignUpFlowPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WSignUpFlowPasswordViewController.swift; sourceTree = "<group>"; };
 		E2C314221E82F8CD0098937A /* WSignUpFlowPasswordViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WSignUpFlowPasswordViewModel.swift; sourceTree = "<group>"; };
 		E2C314231E82F8CD0098937A /* WCreateUsernameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WCreateUsernameViewController.swift; sourceTree = "<group>"; };
@@ -295,8 +295,8 @@
 		E2C3142E1E82FA1D0098937A /* SignUpEmailViewController */ = {
 			isa = PBXGroup;
 			children = (
-				E2C3141F1E82F8CD0098937A /* HUSignUpFlowEmailViewController.swift */,
-				E2C314201E82F8CD0098937A /* HUSignUpFlowEmailViewModel.swift */,
+				E2C3141F1E82F8CD0098937A /* WSignUpFlowEmailViewController.swift */,
+				E2C314201E82F8CD0098937A /* WSignUpFlowEmailViewModel.swift */,
 			);
 			name = SignUpEmailViewController;
 			sourceTree = "<group>";
@@ -442,7 +442,7 @@
 				E2C314291E82F8CD0098937A /* WSignUpFlowPasswordViewController.swift in Sources */,
 				E2C3141B1E82F7FF0098937A /* WSignUpFlowSubtitleCell.swift in Sources */,
 				E2C314131E82F7E90098937A /* WSignUpFlowInputFieldCell.swift in Sources */,
-				E2C314281E82F8CD0098937A /* HUSignUpFlowEmailViewModel.swift in Sources */,
+				E2C314281E82F8CD0098937A /* WSignUpFlowEmailViewModel.swift in Sources */,
 				E2C314171E82F7F50098937A /* WSignUpFlowTitleCell.swift in Sources */,
 				E2C3140B1E82F7900098937A /* UIColor+Utilities.swift in Sources */,
 				E2C3140C1E82F7900098937A /* UIResponder+Utilities.swift in Sources */,
@@ -456,7 +456,7 @@
 				E2C314251E82F8CD0098937A /* WAuthenticationViewController.swift in Sources */,
 				E2C313C21E8047E50098937A /* AppDelegate.swift in Sources */,
 				E2C314341E82FFB00098937A /* WSignUpFlowContinueView.swift in Sources */,
-				E2C314271E82F8CD0098937A /* HUSignUpFlowEmailViewController.swift in Sources */,
+				E2C314271E82F8CD0098937A /* WSignUpFlowEmailViewController.swift in Sources */,
 				E2C3140A1E82F7900098937A /* Enum+CaseCountable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
