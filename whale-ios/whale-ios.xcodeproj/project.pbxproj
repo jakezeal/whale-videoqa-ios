@@ -12,6 +12,7 @@
 		E28E20F01E8987BC00B7E371 /* WAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28E20EF1E8987BC00B7E371 /* WAPIManager.swift */; };
 		E28E20F21E8988B700B7E371 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28E20F11E8988B700B7E371 /* UserService.swift */; };
 		E28E20F41E8988E900B7E371 /* UserRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28E20F31E8988E900B7E371 /* UserRouter.swift */; };
+		E28E20F61E898AFF00B7E371 /* UIView+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28E20F51E898AFF00B7E371 /* UIView+Utilities.swift */; };
 		E2C313C21E8047E50098937A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C313C11E8047E50098937A /* AppDelegate.swift */; };
 		E2C313C91E8047E50098937A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2C313C81E8047E50098937A /* Assets.xcassets */; };
 		E2C313CC1E8047E50098937A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2C313CA1E8047E50098937A /* LaunchScreen.storyboard */; };
@@ -50,6 +51,7 @@
 		E28E20EF1E8987BC00B7E371 /* WAPIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WAPIManager.swift; path = Networking/WAPIManager.swift; sourceTree = "<group>"; };
 		E28E20F11E8988B700B7E371 /* UserService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserService.swift; path = Networking/UserService.swift; sourceTree = "<group>"; };
 		E28E20F31E8988E900B7E371 /* UserRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserRouter.swift; path = Networking/UserRouter.swift; sourceTree = "<group>"; };
+		E28E20F51E898AFF00B7E371 /* UIView+Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIView+Utilities.swift"; path = "Extensions/UIView+Utilities.swift"; sourceTree = "<group>"; };
 		E2C313BE1E8047E50098937A /* whale-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "whale-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2C313C11E8047E50098937A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E2C313C81E8047E50098937A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -157,6 +159,7 @@
 				E2C314071E82F7900098937A /* Enum+CaseCountable.swift */,
 				E2C314081E82F7900098937A /* UIColor+Utilities.swift */,
 				E2C314091E82F7900098937A /* UIResponder+Utilities.swift */,
+				E28E20F51E898AFF00B7E371 /* UIView+Utilities.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -482,6 +485,7 @@
 				E2C314271E82F8CD0098937A /* WSignUpFlowEmailViewController.swift in Sources */,
 				E2C3140A1E82F7900098937A /* Enum+CaseCountable.swift in Sources */,
 				E28E20EE1E8985D400B7E371 /* User.swift in Sources */,
+				E28E20F61E898AFF00B7E371 /* UIView+Utilities.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
