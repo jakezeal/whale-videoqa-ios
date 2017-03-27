@@ -97,10 +97,10 @@
             </objects>
             <point key="canvasLocation" x="-754" y="235"/>
         </scene>
-        <!--Sign Up View Controller-->
+        <!--Sign Up Flow Email View Controller-->
         <scene sceneID="c78-eP-Smw">
             <objects>
-                <viewController id="Aa7-eC-1fU" customClass="SignUpViewController" customModule="whale_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Aa7-eC-1fU" customClass="WSignUpFlowEmailViewController" customModule="whale_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="EX1-Hl-FtX"/>
                         <viewControllerLayoutGuide type="bottom" id="xFf-v4-OsU"/>
@@ -109,10 +109,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ymZ-Xr-zr9">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ymZ-Xr-zr9">
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Aa7-eC-1fU" id="aSJ-lG-IvR"/>
+                                    <outlet property="delegate" destination="Aa7-eC-1fU" id="1Zg-3t-lmA"/>
+                                </connections>
                             </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="59c-9k-b86" customClass="WSignUpFlowContinueView" customModule="whale_ios" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="603" width="375" height="64"/>
+                                <color key="backgroundColor" red="0.11053625240000001" green="0.79285365740000002" blue="0.9539926648" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="ZeI-6h-RGd"/>
+                                </constraints>
+                            </view>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8B4-9Z-CcX">
                                 <rect key="frame" x="16" y="20" width="40" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -121,16 +132,44 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="59c-9k-b86" secondAttribute="trailing" id="8RO-78-QVF"/>
+                            <constraint firstItem="59c-9k-b86" firstAttribute="leading" secondItem="dKm-hO-azc" secondAttribute="leading" id="PaL-sA-U47"/>
                             <constraint firstItem="ymZ-Xr-zr9" firstAttribute="top" secondItem="EX1-Hl-FtX" secondAttribute="bottom" id="TOs-Rs-cg9"/>
                             <constraint firstItem="xFf-v4-OsU" firstAttribute="top" secondItem="ymZ-Xr-zr9" secondAttribute="bottom" id="Yir-DO-ky9"/>
+                            <constraint firstItem="xFf-v4-OsU" firstAttribute="top" secondItem="59c-9k-b86" secondAttribute="bottom" id="dXj-kq-plW"/>
                             <constraint firstItem="ymZ-Xr-zr9" firstAttribute="leading" secondItem="dKm-hO-azc" secondAttribute="leading" id="hc1-Qy-2c4"/>
                             <constraint firstAttribute="trailing" secondItem="ymZ-Xr-zr9" secondAttribute="trailing" id="kxf-F6-Qrk"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="backButton" destination="8B4-9Z-CcX" id="lbN-KW-oYL"/>
+                        <outlet property="continueView" destination="59c-9k-b86" id="nXu-ma-Ely"/>
+                        <outlet property="continueViewBottomConstraint" destination="dXj-kq-plW" id="YGE-x8-Ga3"/>
+                        <outlet property="tableView" destination="ymZ-Xr-zr9" id="XAC-qR-vOl"/>
+                        <segue destination="kMM-Wz-nll" kind="show" identifier="toCreatePassword" id="hif-63-yC8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FLZ-tk-wyL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-754.39999999999998" y="-445.72713643178412"/>
+        </scene>
+        <!--Sign Up Flow Password View Controller-->
+        <scene sceneID="eAV-bD-1rw">
+            <objects>
+                <viewController id="kMM-Wz-nll" customClass="HUSignUpFlowPasswordViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pwA-YN-Jfr"/>
+                        <viewControllerLayoutGuide type="bottom" id="LzL-rw-LJs"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="DOQ-1s-oVh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C7h-we-zru" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4" y="-446"/>
         </scene>
     </scenes>
 </document>

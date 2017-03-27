@@ -67,7 +67,7 @@ class WSignUpFlowContinueView: UIView {
     }
     
     internal func setContinueButton(withTitle title: String) {
-        let font = UIFont(name: "OpenSans-SemiBold", size: 14)!
+        let font = UIFont.systemFont(ofSize: 14)
         let attributes = [NSFontAttributeName : font, NSForegroundColorAttributeName : UIColor.white]
         let attrStr = NSAttributedString(string: title, attributes: attributes)
         

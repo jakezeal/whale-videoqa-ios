@@ -13,14 +13,13 @@
 		E28E20F21E8988B700B7E371 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28E20F11E8988B700B7E371 /* UserService.swift */; };
 		E28E20F41E8988E900B7E371 /* UserRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28E20F31E8988E900B7E371 /* UserRouter.swift */; };
 		E28E20F61E898AFF00B7E371 /* UIView+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28E20F51E898AFF00B7E371 /* UIView+Utilities.swift */; };
+		E28E20F81E898B6D00B7E371 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28E20F71E898B6D00B7E371 /* Constants.swift */; };
 		E2C313C21E8047E50098937A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C313C11E8047E50098937A /* AppDelegate.swift */; };
 		E2C313C91E8047E50098937A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2C313C81E8047E50098937A /* Assets.xcassets */; };
 		E2C313CC1E8047E50098937A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2C313CA1E8047E50098937A /* LaunchScreen.storyboard */; };
 		E2C313DE1E80556C0098937A /* Authentication.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2C313DD1E80556C0098937A /* Authentication.storyboard */; };
 		E2C313E01E8055A20098937A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2C313DF1E8055A20098937A /* Main.storyboard */; };
 		E2C313E61E82EF090098937A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C313E51E82EF090098937A /* LoginViewController.swift */; };
-		E2C313E81E82EF160098937A /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C313E71E82EF160098937A /* SignUpViewController.swift */; };
-		E2C314061E82F75F0098937A /* SignUpUsernameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C314051E82F75F0098937A /* SignUpUsernameViewController.swift */; };
 		E2C3140A1E82F7900098937A /* Enum+CaseCountable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C314071E82F7900098937A /* Enum+CaseCountable.swift */; };
 		E2C3140B1E82F7900098937A /* UIColor+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C314081E82F7900098937A /* UIColor+Utilities.swift */; };
 		E2C3140C1E82F7900098937A /* UIResponder+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C314091E82F7900098937A /* UIResponder+Utilities.swift */; };
@@ -52,6 +51,7 @@
 		E28E20F11E8988B700B7E371 /* UserService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserService.swift; path = Networking/UserService.swift; sourceTree = "<group>"; };
 		E28E20F31E8988E900B7E371 /* UserRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserRouter.swift; path = Networking/UserRouter.swift; sourceTree = "<group>"; };
 		E28E20F51E898AFF00B7E371 /* UIView+Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIView+Utilities.swift"; path = "Extensions/UIView+Utilities.swift"; sourceTree = "<group>"; };
+		E28E20F71E898B6D00B7E371 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = "Supporting Files/Constants.swift"; sourceTree = "<group>"; };
 		E2C313BE1E8047E50098937A /* whale-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "whale-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2C313C11E8047E50098937A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E2C313C81E8047E50098937A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -60,8 +60,6 @@
 		E2C313DD1E80556C0098937A /* Authentication.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Authentication.storyboard; path = UI/Storyboards/Authentication.storyboard; sourceTree = "<group>"; };
 		E2C313DF1E8055A20098937A /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = UI/Storyboards/Main.storyboard; sourceTree = "<group>"; };
 		E2C313E51E82EF090098937A /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = UI/Scenes/Authentication/LoginViewController.swift; sourceTree = "<group>"; };
-		E2C313E71E82EF160098937A /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignUpViewController.swift; path = UI/Scenes/Authentication/SignUpViewController.swift; sourceTree = "<group>"; };
-		E2C314051E82F75F0098937A /* SignUpUsernameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignUpUsernameViewController.swift; path = "UI/Scenes/Authentication/Sign Up/SignUpUsernameViewController.swift"; sourceTree = "<group>"; };
 		E2C314071E82F7900098937A /* Enum+CaseCountable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Enum+CaseCountable.swift"; path = "Extensions/Enum+CaseCountable.swift"; sourceTree = "<group>"; };
 		E2C314081E82F7900098937A /* UIColor+Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIColor+Utilities.swift"; path = "Extensions/UIColor+Utilities.swift"; sourceTree = "<group>"; };
 		E2C314091E82F7900098937A /* UIResponder+Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIResponder+Utilities.swift"; path = "Extensions/UIResponder+Utilities.swift"; sourceTree = "<group>"; };
@@ -170,6 +168,7 @@
 				E2C313C81E8047E50098937A /* Assets.xcassets */,
 				E2C313CA1E8047E50098937A /* LaunchScreen.storyboard */,
 				E2C313CD1E8047E50098937A /* Info.plist */,
+				E28E20F71E898B6D00B7E371 /* Constants.swift */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -225,11 +224,6 @@
 			children = (
 				E2C3142D1E82F92E0098937A /* AuthenticationViewController */,
 				E2C3142E1E82FA1D0098937A /* SignUpEmailViewController */,
-				E2C314211E82F8CD0098937A /* WSignUpFlowPasswordViewController.swift */,
-				E2C314221E82F8CD0098937A /* WSignUpFlowPasswordViewModel.swift */,
-				E2C314231E82F8CD0098937A /* WCreateUsernameViewController.swift */,
-				E2C314241E82F8CD0098937A /* WCreateUsernameViewModel.swift */,
-				E2C313E21E80569D0098937A /* Sign up */,
 				E2C313E11E8056930098937A /* Login */,
 			);
 			name = Authentication;
@@ -241,15 +235,6 @@
 				E2C313E51E82EF090098937A /* LoginViewController.swift */,
 			);
 			name = Login;
-			sourceTree = "<group>";
-		};
-		E2C313E21E80569D0098937A /* Sign up */ = {
-			isa = PBXGroup;
-			children = (
-				E2C313E71E82EF160098937A /* SignUpViewController.swift */,
-				E2C314051E82F75F0098937A /* SignUpUsernameViewController.swift */,
-			);
-			name = "Sign up";
 			sourceTree = "<group>";
 		};
 		E2C313E91E82F2740098937A /* Authentication */ = {
@@ -320,6 +305,10 @@
 			children = (
 				E2C3141F1E82F8CD0098937A /* WSignUpFlowEmailViewController.swift */,
 				E2C314201E82F8CD0098937A /* WSignUpFlowEmailViewModel.swift */,
+				E2C314211E82F8CD0098937A /* WSignUpFlowPasswordViewController.swift */,
+				E2C314221E82F8CD0098937A /* WSignUpFlowPasswordViewModel.swift */,
+				E2C314231E82F8CD0098937A /* WCreateUsernameViewController.swift */,
+				E2C314241E82F8CD0098937A /* WCreateUsernameViewModel.swift */,
 			);
 			name = SignUpEmailViewController;
 			sourceTree = "<group>";
@@ -468,10 +457,9 @@
 				E2C314281E82F8CD0098937A /* WSignUpFlowEmailViewModel.swift in Sources */,
 				E2C314171E82F7F50098937A /* WSignUpFlowTitleCell.swift in Sources */,
 				E2C3140B1E82F7900098937A /* UIColor+Utilities.swift in Sources */,
+				E28E20F81E898B6D00B7E371 /* Constants.swift in Sources */,
 				E28E20F21E8988B700B7E371 /* UserService.swift in Sources */,
 				E2C3140C1E82F7900098937A /* UIResponder+Utilities.swift in Sources */,
-				E2C314061E82F75F0098937A /* SignUpUsernameViewController.swift in Sources */,
-				E2C313E81E82EF160098937A /* SignUpViewController.swift in Sources */,
 				E2C3140F1E82F7D90098937A /* WSignUpFlowPasswordInputCell.swift in Sources */,
 				E2C314311E82FB4F0098937A /* UILabel+Utilities.swift in Sources */,
 				E2C3142C1E82F8CD0098937A /* WCreateUsernameViewModel.swift in Sources */,
