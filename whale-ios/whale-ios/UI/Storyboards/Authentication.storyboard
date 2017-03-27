@@ -156,7 +156,7 @@
         <!--Sign Up Flow Password View Controller-->
         <scene sceneID="eAV-bD-1rw">
             <objects>
-                <viewController id="kMM-Wz-nll" customClass="HUSignUpFlowPasswordViewController" sceneMemberID="viewController">
+                <viewController id="kMM-Wz-nll" customClass="WSignUpFlowPasswordViewController" customModule="whale_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="pwA-YN-Jfr"/>
                         <viewControllerLayoutGuide type="bottom" id="LzL-rw-LJs"/>
@@ -164,8 +164,45 @@
                     <view key="view" contentMode="scaleToFill" id="DOQ-1s-oVh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="e4A-zQ-gAo">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="kMM-Wz-nll" id="w0d-r6-O9a"/>
+                                    <outlet property="delegate" destination="kMM-Wz-nll" id="1HV-ub-3SY"/>
+                                </connections>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3XW-4z-LwK" customClass="WSignUpFlowContinueView" customModule="whale_ios" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="603" width="375" height="64"/>
+                                <color key="backgroundColor" red="0.11053625240000001" green="0.79285365740000002" blue="0.9539926648" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="fvl-CH-aeH"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ccQ-6x-gMr">
+                                <rect key="frame" x="16" y="20" width="40" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="BACK"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="e4A-zQ-gAo" firstAttribute="leading" secondItem="DOQ-1s-oVh" secondAttribute="leading" id="6mZ-1X-b4B"/>
+                            <constraint firstAttribute="trailing" secondItem="3XW-4z-LwK" secondAttribute="trailing" id="7XB-N7-jwn"/>
+                            <constraint firstItem="LzL-rw-LJs" firstAttribute="top" secondItem="3XW-4z-LwK" secondAttribute="bottom" id="DVa-Nf-os2"/>
+                            <constraint firstItem="LzL-rw-LJs" firstAttribute="top" secondItem="e4A-zQ-gAo" secondAttribute="bottom" id="btD-RA-wWj"/>
+                            <constraint firstItem="3XW-4z-LwK" firstAttribute="leading" secondItem="DOQ-1s-oVh" secondAttribute="leading" id="e4B-4x-mwf"/>
+                            <constraint firstAttribute="trailing" secondItem="e4A-zQ-gAo" secondAttribute="trailing" id="qkF-Fi-AAQ"/>
+                            <constraint firstItem="e4A-zQ-gAo" firstAttribute="top" secondItem="pwA-YN-Jfr" secondAttribute="bottom" id="s5C-AB-7gS"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="backButton" destination="ccQ-6x-gMr" id="cJ6-UQ-K5V"/>
+                        <outlet property="continueView" destination="3XW-4z-LwK" id="cdV-5T-4aO"/>
+                        <outlet property="continueViewBottomConstraint" destination="DVa-Nf-os2" id="TDw-S3-luq"/>
+                        <outlet property="tableView" destination="e4A-zQ-gAo" id="Hbh-bO-7ab"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C7h-we-zru" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
