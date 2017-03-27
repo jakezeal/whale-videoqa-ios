@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		36BA33A85C1D559C22BEEF21 /* Pods_whale_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD0D88E64DE4DA908A3BF735 /* Pods_whale_ios.framework */; };
+		E28E20EE1E8985D400B7E371 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28E20ED1E8985D400B7E371 /* User.swift */; };
 		E2C313C21E8047E50098937A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C313C11E8047E50098937A /* AppDelegate.swift */; };
 		E2C313C91E8047E50098937A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2C313C81E8047E50098937A /* Assets.xcassets */; };
 		E2C313CC1E8047E50098937A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2C313CA1E8047E50098937A /* LaunchScreen.storyboard */; };
@@ -42,6 +43,7 @@
 		17C33564846706D856D7FEE6 /* Pods-whale-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-whale-ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-whale-ios/Pods-whale-ios.debug.xcconfig"; sourceTree = "<group>"; };
 		CC6C6F3A42A0E62D5AB26681 /* Pods-whale-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-whale-ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-whale-ios/Pods-whale-ios.release.xcconfig"; sourceTree = "<group>"; };
 		CD0D88E64DE4DA908A3BF735 /* Pods_whale_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_whale_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E28E20ED1E8985D400B7E371 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = Models/User.swift; sourceTree = "<group>"; };
 		E2C313BE1E8047E50098937A /* whale-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "whale-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2C313C11E8047E50098937A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E2C313C81E8047E50098937A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -103,6 +105,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		E28E20EC1E8985BC00B7E371 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E28E20ED1E8985D400B7E371 /* User.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		E2C313B51E8047E50098937A = {
 			isa = PBXGroup;
 			children = (
@@ -127,6 +137,7 @@
 				E2C313C11E8047E50098937A /* AppDelegate.swift */,
 				E2C313D91E804A480098937A /* Networking */,
 				E2C313D51E8049F00098937A /* UI */,
+				E28E20EC1E8985BC00B7E371 /* Models */,
 				E2C313D31E8049DD0098937A /* Extensions */,
 				E2C313D41E8049E30098937A /* Supporting Files */,
 			);
@@ -458,6 +469,7 @@
 				E2C314341E82FFB00098937A /* WSignUpFlowContinueView.swift in Sources */,
 				E2C314271E82F8CD0098937A /* WSignUpFlowEmailViewController.swift in Sources */,
 				E2C3140A1E82F7900098937A /* Enum+CaseCountable.swift in Sources */,
+				E28E20EE1E8985D400B7E371 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
