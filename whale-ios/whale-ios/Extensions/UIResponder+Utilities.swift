@@ -27,7 +27,7 @@ extension UIResponder {
         return w_nibNamed(nibName: self.toString())
     }
     
-    class func hu_instantiateWithNibNamed<T>(nibName: String, withType type: T.Type) -> T {
+    class func w_instantiateWithNibNamed<T>(nibName: String, withType type: T.Type) -> T {
         let nib = w_nibNamed(nibName: nibName)
         let objects = nib.instantiate(withOwner: nil, options: nil)
         
