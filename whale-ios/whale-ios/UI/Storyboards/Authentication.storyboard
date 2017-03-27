@@ -126,11 +126,12 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8B4-9Z-CcX">
-                                <rect key="frame" x="15" y="35" width="24" height="24"/>
+                                <rect key="frame" x="0.0" y="20" width="64" height="64"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="24" id="5jC-qV-eL0"/>
-                                    <constraint firstAttribute="height" constant="24" id="QxW-Ow-Cux"/>
+                                    <constraint firstAttribute="width" constant="64" id="5jC-qV-eL0"/>
+                                    <constraint firstAttribute="height" constant="64" id="QxW-Ow-Cux"/>
                                 </constraints>
+                                <inset key="imageEdgeInsets" minX="-5" minY="-10" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" image="ic_back_arrow_gray"/>
                                 <connections>
                                     <action selector="backButtonTapped:" destination="Aa7-eC-1fU" eventType="touchUpInside" id="2Ev-as-sRX"/>
@@ -140,14 +141,14 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="59c-9k-b86" secondAttribute="trailing" id="8RO-78-QVF"/>
-                            <constraint firstItem="8B4-9Z-CcX" firstAttribute="top" secondItem="EX1-Hl-FtX" secondAttribute="bottom" constant="15" id="M7V-gY-PG8"/>
+                            <constraint firstItem="8B4-9Z-CcX" firstAttribute="top" secondItem="EX1-Hl-FtX" secondAttribute="bottom" id="M7V-gY-PG8"/>
                             <constraint firstItem="59c-9k-b86" firstAttribute="leading" secondItem="dKm-hO-azc" secondAttribute="leading" id="PaL-sA-U47"/>
                             <constraint firstItem="ymZ-Xr-zr9" firstAttribute="top" secondItem="EX1-Hl-FtX" secondAttribute="bottom" id="TOs-Rs-cg9"/>
                             <constraint firstItem="xFf-v4-OsU" firstAttribute="top" secondItem="ymZ-Xr-zr9" secondAttribute="bottom" id="Yir-DO-ky9"/>
                             <constraint firstItem="xFf-v4-OsU" firstAttribute="top" secondItem="59c-9k-b86" secondAttribute="bottom" id="dXj-kq-plW"/>
                             <constraint firstItem="ymZ-Xr-zr9" firstAttribute="leading" secondItem="dKm-hO-azc" secondAttribute="leading" id="hc1-Qy-2c4"/>
                             <constraint firstAttribute="trailing" secondItem="ymZ-Xr-zr9" secondAttribute="trailing" id="kxf-F6-Qrk"/>
-                            <constraint firstItem="8B4-9Z-CcX" firstAttribute="leading" secondItem="dKm-hO-azc" secondAttribute="leading" constant="15" id="yoQ-vt-zgz"/>
+                            <constraint firstItem="8B4-9Z-CcX" firstAttribute="leading" secondItem="dKm-hO-azc" secondAttribute="leading" id="yoQ-vt-zgz"/>
                         </constraints>
                     </view>
                     <connections>
@@ -190,11 +191,12 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ccQ-6x-gMr">
-                                <rect key="frame" x="15" y="35" width="24" height="24"/>
+                                <rect key="frame" x="0.0" y="20" width="64" height="64"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="24" id="A0c-ws-Db2"/>
-                                    <constraint firstAttribute="width" constant="24" id="AmF-NH-JR3"/>
+                                    <constraint firstAttribute="height" constant="64" id="A0c-ws-Db2"/>
+                                    <constraint firstAttribute="width" constant="64" id="AmF-NH-JR3"/>
                                 </constraints>
+                                <inset key="imageEdgeInsets" minX="-5" minY="-10" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" image="ic_back_arrow_gray"/>
                                 <connections>
                                     <action selector="backButtonTapped:" destination="kMM-Wz-nll" eventType="touchUpInside" id="LNd-sv-IoD"/>
@@ -203,13 +205,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="ccQ-6x-gMr" firstAttribute="leading" secondItem="DOQ-1s-oVh" secondAttribute="leading" constant="15" id="2Wa-qq-h8b"/>
+                            <constraint firstItem="ccQ-6x-gMr" firstAttribute="leading" secondItem="DOQ-1s-oVh" secondAttribute="leading" id="2Wa-qq-h8b"/>
                             <constraint firstItem="e4A-zQ-gAo" firstAttribute="leading" secondItem="DOQ-1s-oVh" secondAttribute="leading" id="6mZ-1X-b4B"/>
                             <constraint firstAttribute="trailing" secondItem="3XW-4z-LwK" secondAttribute="trailing" id="7XB-N7-jwn"/>
                             <constraint firstItem="LzL-rw-LJs" firstAttribute="top" secondItem="3XW-4z-LwK" secondAttribute="bottom" id="DVa-Nf-os2"/>
                             <constraint firstItem="LzL-rw-LJs" firstAttribute="top" secondItem="e4A-zQ-gAo" secondAttribute="bottom" id="btD-RA-wWj"/>
                             <constraint firstItem="3XW-4z-LwK" firstAttribute="leading" secondItem="DOQ-1s-oVh" secondAttribute="leading" id="e4B-4x-mwf"/>
-                            <constraint firstItem="ccQ-6x-gMr" firstAttribute="top" secondItem="pwA-YN-Jfr" secondAttribute="bottom" constant="15" id="ic3-F1-r8k"/>
+                            <constraint firstItem="ccQ-6x-gMr" firstAttribute="top" secondItem="pwA-YN-Jfr" secondAttribute="bottom" id="ic3-F1-r8k"/>
                             <constraint firstAttribute="trailing" secondItem="e4A-zQ-gAo" secondAttribute="trailing" id="qkF-Fi-AAQ"/>
                             <constraint firstItem="e4A-zQ-gAo" firstAttribute="top" secondItem="pwA-YN-Jfr" secondAttribute="bottom" id="s5C-AB-7gS"/>
                         </constraints>
@@ -254,11 +256,12 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sug-CV-PIg">
-                                <rect key="frame" x="15" y="35" width="24" height="24"/>
+                                <rect key="frame" x="0.0" y="20" width="64" height="64"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="24" id="T3J-BF-9qG"/>
-                                    <constraint firstAttribute="height" constant="24" id="fp0-87-zvm"/>
+                                    <constraint firstAttribute="width" constant="64" id="T3J-BF-9qG"/>
+                                    <constraint firstAttribute="height" constant="64" id="fp0-87-zvm"/>
                                 </constraints>
+                                <inset key="imageEdgeInsets" minX="-5" minY="-10" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" image="ic_back_arrow_gray"/>
                                 <connections>
                                     <action selector="backButtonTapped:" destination="CY8-sg-nMC" eventType="touchUpInside" id="EBI-iI-WlM"/>
@@ -270,10 +273,10 @@
                             <constraint firstAttribute="trailing" secondItem="lYw-Lb-ZgN" secondAttribute="trailing" id="95C-eg-h9M"/>
                             <constraint firstItem="du9-4B-ycc" firstAttribute="top" secondItem="nzm-gV-kY8" secondAttribute="bottom" id="BJu-rQ-LY4"/>
                             <constraint firstAttribute="bottom" secondItem="lYw-Lb-ZgN" secondAttribute="bottom" id="FM3-XQ-Gc1"/>
-                            <constraint firstItem="Sug-CV-PIg" firstAttribute="top" secondItem="nzm-gV-kY8" secondAttribute="bottom" constant="15" id="FpL-fI-n5r"/>
+                            <constraint firstItem="Sug-CV-PIg" firstAttribute="top" secondItem="nzm-gV-kY8" secondAttribute="bottom" id="FpL-fI-n5r"/>
                             <constraint firstItem="du9-4B-ycc" firstAttribute="leading" secondItem="UDQ-s2-GYu" secondAttribute="leading" id="Fr6-wF-pcu"/>
                             <constraint firstItem="lYw-Lb-ZgN" firstAttribute="leading" secondItem="UDQ-s2-GYu" secondAttribute="leading" id="GB3-hR-USo"/>
-                            <constraint firstItem="Sug-CV-PIg" firstAttribute="leading" secondItem="UDQ-s2-GYu" secondAttribute="leading" constant="15" id="IYZ-NI-HE4"/>
+                            <constraint firstItem="Sug-CV-PIg" firstAttribute="leading" secondItem="UDQ-s2-GYu" secondAttribute="leading" id="IYZ-NI-HE4"/>
                             <constraint firstAttribute="bottom" secondItem="du9-4B-ycc" secondAttribute="bottom" id="Lxm-Dt-5Ld"/>
                             <constraint firstAttribute="trailing" secondItem="du9-4B-ycc" secondAttribute="trailing" id="dvg-ba-grW"/>
                         </constraints>
