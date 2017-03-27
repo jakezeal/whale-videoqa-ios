@@ -49,7 +49,7 @@ class WSignUpFlowContinueView: UIView {
     private lazy var continueButton: UIButton = {
         let button = UIButton(type: .custom)
         button.translatesAutoresizingMaskIntoConstraints = false
-        button.backgroundColor = UIColor.hu_lightGray
+        button.backgroundColor = UIColor.lightGray
         button.layer.cornerRadius = 4
         
         button.addTarget(self, action: #selector(continueButtonTapped), for: .touchUpInside)
@@ -76,7 +76,7 @@ class WSignUpFlowContinueView: UIView {
     
     func button(isEnabled: Bool) {
         continueButton.isUserInteractionEnabled = isEnabled
-        continueButton.backgroundColor = isEnabled ? UIColor.hu_green : UIColor.hu_lightGray
+        continueButton.backgroundColor = isEnabled ? UIColor.blue : UIColor.lightGray
     }
     
     // MARK: - Handle Button Tap

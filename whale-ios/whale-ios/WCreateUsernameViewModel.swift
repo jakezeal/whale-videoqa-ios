@@ -62,7 +62,7 @@ class WCreateUsernameViewModel: NSObject {
                          "password" : password,
                          "email" : email]
         
-        UserService.createUserFromEmailSignUp(witWserAttributes: userAttrs) {
+        UserService.createUserFromEmailSignUp(withUserAttributes: userAttrs) {
             (user: User?) in
             if let user = user {
                 self.delegate?.didCreate(newUser: user)
