@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Authentication View Controller-->
         <scene sceneID="Qi7-kE-dea">
             <objects>
-                <viewController id="eTc-X9-36J" sceneMemberID="viewController">
+                <viewController id="eTc-X9-36J" customClass="WAuthenticationViewController" customModule="whale_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="fl5-P2-rgK"/>
                         <viewControllerLayoutGuide type="bottom" id="nWS-QD-Y8a"/>
@@ -38,6 +38,7 @@
                                 <rect key="frame" x="161" y="378" width="52" height="30"/>
                                 <state key="normal" title="Sign up"/>
                                 <connections>
+                                    <action selector="signUpWithEmailButtonTapped:" destination="eTc-X9-36J" eventType="touchUpInside" id="SVM-xJ-6Sy"/>
                                     <segue destination="Aa7-eC-1fU" kind="show" id="QH9-SC-SdF"/>
                                 </connections>
                             </button>
@@ -60,6 +61,12 @@
                             <constraint firstItem="WxY-0s-Hfc" firstAttribute="centerX" secondItem="fMQ-57-b0C" secondAttribute="centerX" id="m13-iK-zoc"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="brandNameLabel" destination="094-J5-fmp" id="kKq-Eh-X8w"/>
+                        <outlet property="loginButton" destination="4r4-by-1Fx" id="63N-XF-qwm"/>
+                        <outlet property="signUpWithEmailButton" destination="OWv-kr-hmZ" id="6Iz-rd-OS8"/>
+                        <outlet property="whaleLabel" destination="WxY-0s-Hfc" id="CnE-EK-PWF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UVi-5L-4BI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -102,6 +109,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ymZ-Xr-zr9">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8B4-9Z-CcX">
                                 <rect key="frame" x="16" y="20" width="40" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -109,11 +120,17 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ymZ-Xr-zr9" firstAttribute="top" secondItem="EX1-Hl-FtX" secondAttribute="bottom" id="TOs-Rs-cg9"/>
+                            <constraint firstItem="xFf-v4-OsU" firstAttribute="top" secondItem="ymZ-Xr-zr9" secondAttribute="bottom" id="Yir-DO-ky9"/>
+                            <constraint firstItem="ymZ-Xr-zr9" firstAttribute="leading" secondItem="dKm-hO-azc" secondAttribute="leading" id="hc1-Qy-2c4"/>
+                            <constraint firstAttribute="trailing" secondItem="ymZ-Xr-zr9" secondAttribute="trailing" id="kxf-F6-Qrk"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FLZ-tk-wyL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-754" y="-445"/>
+            <point key="canvasLocation" x="-754.39999999999998" y="-445.72713643178412"/>
         </scene>
     </scenes>
 </document>

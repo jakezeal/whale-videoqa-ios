@@ -1,9 +1,9 @@
 //
 //  UIResponder+Utilities.swift
-//  humanup
+//  whale-ios
 //
-//  Created by Chase Wang on 9/26/16.
-//  Copyright © 2016 Human Up. All rights reserved.
+//  Created by Jake on 3/26/17.
+//  Copyright © 2017 Jake. All rights reserved.
 //
 
 import UIKit
@@ -19,16 +19,16 @@ extension UIResponder {
         return classString
     }
     
-    class func hu_nibNamed(nibName: String) -> UINib {
+    class func w_nibNamed(nibName: String) -> UINib {
         return UINib(nibName: nibName, bundle: Bundle.main)
     }
     
-    class func hu_nib() -> UINib {
-        return hu_nibNamed(nibName: self.toString())
+    class func w_nib() -> UINib {
+        return w_nibNamed(nibName: self.toString())
     }
     
     class func hu_instantiateWithNibNamed<T>(nibName: String, withType type: T.Type) -> T {
-        let nib = hu_nibNamed(nibName: nibName)
+        let nib = w_nibNamed(nibName: nibName)
         let objects = nib.instantiate(withOwner: nil, options: nil)
         
         guard let object = objects.first else {
@@ -40,7 +40,7 @@ extension UIResponder {
     
     // REVIEW: Better way to do this? Look more into generics
     
-    class func hu_instantiateFromNib<T>(withType type: T.Type) -> T {
-        return hu_instantiateWithNibNamed(nibName: self.toString(), withType: T.self)
+    class func w_instantiateFromNib<T>(withType type: T.Type) -> T {
+        return w_instantiateWithNibNamed(nibName: self.toString(), withType: T.self)
     }
 }

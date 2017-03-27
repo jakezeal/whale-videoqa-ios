@@ -10,5 +10,7 @@ target 'whale-ios' do
   pod 'SwiftyJSON'
   pod 'KeychainSwift'
   pod 'Alamofire'
+  pod 'RxSwift',    '~> 3.0'
+  pod 'RxCocoa',    '~> 3.0'  
 
 end
