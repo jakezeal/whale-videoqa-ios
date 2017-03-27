@@ -76,7 +76,7 @@ class WSignUpFlowContinueView: UIView {
     
     func button(isEnabled: Bool) {
         continueButton.isUserInteractionEnabled = isEnabled
-        continueButton.backgroundColor = isEnabled ? UIColor.blue : UIColor.lightGray
+        continueButton.backgroundColor = isEnabled ? UIColor.w_blue : UIColor.lightGray
     }
     
     // MARK: - Handle Button Tap
