@@ -12,7 +12,7 @@ import Alamofire
 enum UserRouter: URLRequestConvertible {
     
     case logIn(String, String)
-    case create([String : Any], [String : Any])
+    case create([String : Any])
     case fetchCurrentUserQuestion
     
     func asURLRequest() throws -> URLRequest {
@@ -29,9 +29,8 @@ enum UserRouter: URLRequestConvertible {
             switch self {
             case .logIn(let email, let password):
                 return ["email" : email, "password" : password]
-            case .create(let userDict, let signupData):
-                return ["attributes" : userDict,
-                        "signup_data" : signupData]
+            case .create(let userDict):
+                return ["attributes" : userDict]
             case .fetchCurrentUserQuestion:
                 return nil
             }

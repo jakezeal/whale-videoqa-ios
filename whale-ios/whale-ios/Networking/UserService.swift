@@ -17,40 +17,37 @@ class UserService {
             .responseJSON { (response: DataResponse<Any>) in
                 switch response.result {
                 case .success(let value):
-//                    WAPIManager.checkForBearerToken(from: response.response)
+                    //                    WAPIManager.checkForBearerToken(from: response.response)
                     
                     let json = JSON(value)
                     let user = User(json: json)
                     User.set(currentUser: user)
                     completion(user)
                     
-                case .failure:
+                case .failure(let error):
+                    // TODO: Improve error handling! Use Result type
+                    print("Improve error handling, \(#function): \(error.localizedDescription)")
                     completion(nil)
                 }
         }
     }
     
-    class func createUserFromEmailSignUp(withUserAttributes attributes: [String : Any], completion: @escaping (User?) -> Void) {
-        
-        let signupData: [String : Any] = ["signup_type" : "email"]
-        
-        self.create(withUserAttributes: attributes, signupData: signupData, completion: completion)
-    }
-    
-    class func create(withUserAttributes attributes: [String : Any], signupData: [String : Any], completion: @escaping (User?) -> Void) {
+    class func create(withUserAttributes attributes: [String : Any], completion: @escaping (User?) -> Void) {
         WAPIManager.shared
-            .request(route: UserRouter.create(attributes, signupData))
+            .request(route: UserRouter.create(attributes))
             .responseJSON { (response: DataResponse<Any>) in
                 switch response.result {
                 case .success(let value):
-//                    WAPIManager.checkForBearerToken(from: response.response)
+                    //                    WAPIManager.checkForBearerToken(from: response.response)
                     
                     let json = JSON(value)
                     let user = User(json: json)
                     User.set(currentUser: user)
                     completion(user)
                     
-                case .failure:
+                case .failure(let error):
+                    // TODO: Improve error handling! Use Result type
+                    print("Improve error handling, \(#function): \(error.localizedDescription)")
                     completion(nil)
                 }
         }
