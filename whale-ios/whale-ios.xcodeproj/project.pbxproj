@@ -15,6 +15,7 @@
 		E28E20F61E898AFF00B7E371 /* UIView+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28E20F51E898AFF00B7E371 /* UIView+Utilities.swift */; };
 		E28E20F81E898B6D00B7E371 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28E20F71E898B6D00B7E371 /* Constants.swift */; };
 		E28E20FA1E8C2E4E00B7E371 /* KeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28E20F91E8C2E4E00B7E371 /* KeychainManager.swift */; };
+		E28E20FF1E8C2F6E00B7E371 /* KeychainWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = E28E20FE1E8C2F6E00B7E371 /* KeychainWrapper.m */; };
 		E2C313C21E8047E50098937A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C313C11E8047E50098937A /* AppDelegate.swift */; };
 		E2C313C91E8047E50098937A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2C313C81E8047E50098937A /* Assets.xcassets */; };
 		E2C313CC1E8047E50098937A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2C313CA1E8047E50098937A /* LaunchScreen.storyboard */; };
@@ -54,6 +55,9 @@
 		E28E20F51E898AFF00B7E371 /* UIView+Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIView+Utilities.swift"; path = "Extensions/UIView+Utilities.swift"; sourceTree = "<group>"; };
 		E28E20F71E898B6D00B7E371 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = "Supporting Files/Constants.swift"; sourceTree = "<group>"; };
 		E28E20F91E8C2E4E00B7E371 /* KeychainManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KeychainManager.swift; path = Networking/KeychainManager.swift; sourceTree = "<group>"; };
+		E28E20FC1E8C2F6D00B7E371 /* whale-ios-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "whale-ios-Bridging-Header.h"; sourceTree = "<group>"; };
+		E28E20FD1E8C2F6E00B7E371 /* KeychainWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeychainWrapper.h; sourceTree = "<group>"; };
+		E28E20FE1E8C2F6E00B7E371 /* KeychainWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeychainWrapper.m; sourceTree = "<group>"; };
 		E2C313BE1E8047E50098937A /* whale-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "whale-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2C313C11E8047E50098937A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E2C313C81E8047E50098937A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -121,6 +125,15 @@
 			name = Models;
 			sourceTree = "<group>";
 		};
+		E28E20FB1E8C2F5B00B7E371 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				E28E20FD1E8C2F6E00B7E371 /* KeychainWrapper.h */,
+				E28E20FE1E8C2F6E00B7E371 /* KeychainWrapper.m */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
 		E2C313B51E8047E50098937A = {
 			isa = PBXGroup;
 			children = (
@@ -146,6 +159,7 @@
 				E2C313D91E804A480098937A /* Networking */,
 				E2C313D51E8049F00098937A /* UI */,
 				E28E20EC1E8985BC00B7E371 /* Models */,
+				E28E20FB1E8C2F5B00B7E371 /* Utilities */,
 				E2C313D31E8049DD0098937A /* Extensions */,
 				E2C313D41E8049E30098937A /* Supporting Files */,
 			);
@@ -167,6 +181,7 @@
 		E2C313D41E8049E30098937A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E28E20FC1E8C2F6D00B7E371 /* whale-ios-Bridging-Header.h */,
 				E2C313C81E8047E50098937A /* Assets.xcassets */,
 				E2C313CA1E8047E50098937A /* LaunchScreen.storyboard */,
 				E2C313CD1E8047E50098937A /* Info.plist */,
@@ -360,6 +375,7 @@
 					E2C313BD1E8047E50098937A = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = MPF357W934;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -474,6 +490,7 @@
 				E2C314341E82FFB00098937A /* WSignUpFlowContinueView.swift in Sources */,
 				E28E20F41E8988E900B7E371 /* UserRouter.swift in Sources */,
 				E28E20F01E8987BC00B7E371 /* WAPIManager.swift in Sources */,
+				E28E20FF1E8C2F6E00B7E371 /* KeychainWrapper.m in Sources */,
 				E2C314271E82F8CD0098937A /* WSignUpFlowEmailViewController.swift in Sources */,
 				E2C3140A1E82F7900098937A /* Enum+CaseCountable.swift in Sources */,
 				E28E20EE1E8985D400B7E371 /* User.swift in Sources */,
@@ -591,12 +608,15 @@
 			baseConfigurationReference = 17C33564846706D856D7FEE6 /* Pods-whale-ios.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = MPF357W934;
 				INFOPLIST_FILE = "whale-ios/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jakezeal.whale-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "whale-ios/whale-ios-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -606,12 +626,14 @@
 			baseConfigurationReference = CC6C6F3A42A0E62D5AB26681 /* Pods-whale-ios.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = MPF357W934;
 				INFOPLIST_FILE = "whale-ios/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jakezeal.whale-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "whale-ios/whale-ios-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

@@ -7,11 +7,19 @@
 //
 
 import Foundation
-import KeychainSwift
 
 final class KeychainManager {
-    static func checkForAuthToken() {
-        let keychain = KeychainSwift(keyPrefix: <#T##String#>)
-        set(bearerToken: bearerToken)
+    static func checkForAuthToken() -> Bool {
+        let defaults = UserDefaults.standard
+        return defaults.bool(forKey: Constants.UserDefaults.isAuthTokenSet)
+    }
+    
+    static func set(authToken: String) {
+        let keychainWrapper = KeychainWrapper()
+        keychainWrapper.mySetObject(authToken, forKey: "auth_token")
+        keychainWrapper.writeToKeychain()
+        
+        let defaults = UserDefaults.standard
+        defaults.set(true, forKey: Constants.UserDefaults.isAuthTokenSet)
     }
 }

@@ -16,26 +16,6 @@ final class WAPIManager {
     // MARK: - Singleton
     static let shared = WAPIManager()
     
-    // MARK: - Class Methods
-//    static func checkForBearerToken(from response: HTTPURLResponse?) {
-//        guard let res = response,
-//            let bearerToken = res.allHeaderFields[Constants.HeaderFields.authorization] as? String
-//            else { return }
-//        
-//        set(bearerToken: bearerToken)
-//    }
-//    
-//    static func set(bearerToken: String) {
-//        let keychainWrapper = KeychainWrapper()
-//        keychainWrapper.mySetObject(bearerToken, forKey: kSecValueData)
-//        keychainWrapper.writeToKeychain()
-//        
-//        let defaults = UserDefaults.standard
-//        defaults.set(true, forKey: Constants.UserDefaults.isBearerTokenSet)
-//        
-//        shared.setOrRefreshHeaderAdapter()
-//    }
-    
     // MARK: - Instance Vars
     private var sessionManager: SessionManager!
     

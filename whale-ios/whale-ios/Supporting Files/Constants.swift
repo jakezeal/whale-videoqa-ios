@@ -11,4 +11,8 @@ struct Constants {
         static let authentication = "Authentication"
         static let main = "Main"
     }
+    
+    struct UserDefaults {
+        static let isAuthTokenSet = "com.jakezeal.isAuthTokenSet"
+    }
 }
